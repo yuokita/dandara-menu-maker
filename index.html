@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DANDARA Menu Maker</title>
+    <meta
+      name="description"
+      content="DANDARAの日替わりメニュー画像を作るためのシンプルなWebツールです。"
+    />
+    <style>
+      body {
+        margin: 0;
+        background: #efe3d1;
+      }
+    </style>
+    <link rel="stylesheet" href="./assets/css/dandara-menu-maker.css" />
+  </head>
+  <body>
+    <main class="dandara-menu-maker" data-dandara-menu-maker>
+      <section class="dmm-editor" aria-label="メニュー入力"></section>
+      <section class="dmm-preview" aria-label="完成プレビュー"></section>
+    </main>
+    <script>
+      window.DandaraMenuMaker = {
+        referenceImage: "./assets/images/dandara-reference.jpg",
+      };
+    </script>
+    <script src="./assets/js/dandara-menu-maker.js"></script>
+  </body>
+</html>
